@@ -1,3 +1,4 @@
+// Hajdú Patrik Zsolt – RP329D – utolsó frissítés dátuma: 2024.11.19
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

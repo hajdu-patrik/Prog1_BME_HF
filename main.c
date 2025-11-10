@@ -1,3 +1,4 @@
+// Hajdú Patrik Zsolt – RP329D – utolsó frissítés dátuma: 2024.11.19
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
@@ -380,39 +381,39 @@ int main() {
                 Torol_Szotar_Felirat();
                 Tovabb_Gombra("\tSIKER: A fajl sikeresen beolvasva a szotarak koze!");
             } break;
-            
-            /*
-            case 4: {
 
-                Konzol_Torles();
-                char Keresett_Szo[50+1];
-                Szoveg_Beolvas(true, "Add meg a szot, amelynek az osszes nyelven elerheto megfelelojet szeretned megtekinteni, ha szerepel valamelyik szotarban:", Keresett_Szo, -1, "", true, "Nem tartalmazhat egy szo szamot!");
+                /*
+                case 4: {
 
-                bool van_e_barmelyikben = false;
-                int j = 0;
-                for(Lista *iter = Fo_Lista; iter != NULL; iter = iter->kov) {
-                    for(int i = 0; i < iter->szotar.szoparok_szama; i++) {
-                        if(strcmp(Keresett_Szo, iter->szotar.szoparok_tomb[0][j]) == 0) {
-                            if(!van_e_barmelyikben)
-                                printf("A %s-nek az alabbi megfeleloi, az allabi nyelveken:\n");
-                            van_e_barmelyikben = true;
+                    Konzol_Torles();
+                    char Keresett_Szo[50+1];
+                    Szoveg_Beolvas(true, "Add meg a szot, amelynek az osszes nyelven elerheto megfelelojet szeretned megtekinteni, ha szerepel valamelyik szotarban:", Keresett_Szo, -1, "", true, "Nem tartalmazhat egy szo szamot!");
 
-                            printf("%s - %s", iter->szotar.nyelv1, iter->szotar.szoparok_tomb[0][j]);
-                            j++;
-                        }
-                        if(strcmp(Keresett_Szo, iter->szotar.szoparok_tomb[1][j]) == 0) {
-                            if(!van_e_barmelyikben)
-                                printf("A %s-nek az alabbi megfeleloi, az allabi nyelveken:\n");
-                            van_e_barmelyikben = true;
+                    bool van_e_barmelyikben = false;
+                    int j = 0;
+                    for(Lista *iter = Fo_Lista; iter != NULL; iter = iter->kov) {
+                        for(int i = 0; i < iter->szotar.szoparok_szama; i++) {
+                            if(strcmp(Keresett_Szo, iter->szotar.szoparok_tomb[0][j]) == 0) {
+                                if(!van_e_barmelyikben)
+                                    printf("A %s-nek az alabbi megfeleloi, az allabi nyelveken:\n");
+                                van_e_barmelyikben = true;
 
-                            printf("%s - %s", iter->szotar.nyelv2, iter->szotar.szoparok_tomb[1][j]);
-                            j++;
+                                printf("%s - %s", iter->szotar.nyelv1, iter->szotar.szoparok_tomb[0][j]);
+                                j++;
+                            }
+                            if(strcmp(Keresett_Szo, iter->szotar.szoparok_tomb[1][j]) == 0) {
+                                if(!van_e_barmelyikben)
+                                    printf("A %s-nek az alabbi megfeleloi, az allabi nyelveken:\n");
+                                van_e_barmelyikben = true;
+
+                                printf("%s - %s", iter->szotar.nyelv2, iter->szotar.szoparok_tomb[1][j]);
+                                j++;
+                            }
                         }
                     }
-                }
 
-            } break;
-            */
+                } break;
+                */
             case 4: {
                 Torol_Szotar_Felirat();
 
@@ -449,7 +450,7 @@ int main() {
                     Tovabb_Gombra("\tSIKER: A keresett szo megfeleloi ki lettek irva!");
                 }
             } break;
-        
+
             case 5: {
                 Konzol_Torles();
                 printf("\n\t       _                    _   _   __  _    __                \n");

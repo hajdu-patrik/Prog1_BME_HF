@@ -1,3 +1,4 @@
+// Hajdú Patrik Zsolt – RP329D – utolsó frissítés dátuma: 2024.11.19
 #ifndef LISTA_MUVELETEK_H_INCLUDED
 #define LISTA_MUVELETEK_H_INCLUDED
 
