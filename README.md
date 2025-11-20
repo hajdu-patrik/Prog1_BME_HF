@@ -24,6 +24,8 @@ The project is built with a modular structure in C and features manual memory ma
 * **ASCII Art:** Custom ASCII art logo for the text-based UI.
 * **Error Handling:** Robust input validation (e.g., checking for numbers in names, menu bounds).
 
+---
+
 ## 🛠️ Technical Implementation
 
 * **Language:** C (using `stdio.h`, `stdlib.h`, `string.h`, `stdbool.h`).
@@ -40,6 +42,49 @@ The project is built with a modular structure in C and features manual memory ma
     * All dictionary nodes (`Lista`) and language names are dynamically allocated using `malloc`.
     * Includes `debugmalloc.h` for memory leak and error detection.
     * A `L_Felszabadit` function handles the cleanup of the entire linked list on exit.
+
+---
+
+## 📂 Modular Folder Structure
+To enhance clarity and professional organization, the project files are structured into dedicated directories:
+* **`src/`**: Contains all C source files (`.c`).
+* **`include/`**: Contains all header files (`.h`), defining the public interfaces and data structures.
+* **`data/`**: Stores example dictionary files (e.g., `magyar_olasz.txt`).
+* **`build/`**: The output directory for compiled object files and the final executable.
+
+---
+
+## ⚙️ Compilation & Execution
+
+The project requires the **GCC** compiler. Compilation can be achieved either through direct compiler calls or using the build automation tool `make`.
+
+### A. Direct GCC Compilation (Recommended for Minimal Environments like MINGW/Git Bash)
+This method explicitly links all source files and is the most reliable if build tools are missing.
+
+1.  **Create Build Directory:** The output directory must exist before compilation:
+    ```bash
+    mkdir build
+    ```
+
+2.  **Compile and Link:** Execute the following command from the project root. The `-Iinclude` flag is crucial as it tells the compiler where to find the header files.
+    ```bash
+    gcc -Wall -Wextra -std=c99 -g -Iinclude src/main.c src/lista_muveletek.c src/szotar_muveletek.c src/seged.c -o build/dictionary_manager.exe
+    ```
+
+3.  **Run Application:**
+    ```bash
+    ./build/dictionary_manager.exe
+    ```
+    
+### B. Build Automation (Ideal Method: Requires GNU Make)
+If the **GNU Make** utility is installed and configured, the process is simpler using the included `Makefile`:
+```bash
+make
+./build/dictionary_manager.exe
+```
+Use make clean to remove compiled files and the build/ directory.
+
+---
 
 ## 🖥️ Controls & Menus
 
